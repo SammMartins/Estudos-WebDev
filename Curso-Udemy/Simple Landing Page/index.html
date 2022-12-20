@@ -20,15 +20,14 @@
 <aside class="menu white-bg">
     <div class="main-content menu-content">
         <h1>
-            <a href="#">LOGO</a>
+            <a href="#home">LOGO</a>
         </h1>
 
         <nav>
             <ul>
-                <li><a href="#">intro</a></li>
-                <li><a href="#">top 3</a></li>
-                <li><a href="#">gallerry</a></li>
-                <li><a href="#">work</a></li>
+                <li><a href="#intro">intro</a></li>
+                <li><a href="#description-top3">description</a></li>
+                <li><a href="#gallery">gallery</a></li>
                 <li><a href="#">contact</a></li>
 
             </ul>
@@ -38,7 +37,7 @@
 
 <div class="menu-spacing"></div>
 
-<section class="intro main-bg section">
+<section id="home" class="intro main-bg section">
     <div class="main-content intro-content">
         <div class="intro-text-content">
             <h2>JANUARY BRINGS US FIREFOX 85</h2>
@@ -49,11 +48,80 @@
                 support from Firefox.</p>
         </div>
 
-        <div class="intro-img"><img src="./assets/img/js.svg" alt="Ícones Logos do HTML, JavaScript e CSS, sendo manipulados por homens e mulheres"></div>
+        <div class="intro-img"><img src="./assets/img/js.svg"
+                alt="Ícones Logos do HTML, JavaScript e CSS, sendo manipulados por homens e mulheres"></div>
     </div>
 </section>
 
-<section class="white-bg section"></section>
+<section id="intro" class="white-bg section">
+    <div class="main-content top3-content">
+        <h2>top 3 jobs</h2>
+        <p>The release of Apple Silicon-based Macs at the end of last year generated a flurry of news coverage and some
+            surprises at the machine’s performance. This post details some background information on the experience of
+            porting
+            Firefox to run natively on these CPUs.The release of Apple Silicon-based Macs at the end of last year
+            generated
+            a
+            flurry of news coverage and some surprises at the machine’s performance. This post details some background
+            information on the experience of porting Firefox to run natively on these CPUs.</p>
+        <p>We’ll start with some background on the Mac transition and give an overview of Firefox internals that needed
+            to
+            know
+            about the new architecture, before moving on to the concept of Universal Binaries.</p>
+        <p>We’ll then explain how DRM/EME works on the new platform, talk about our experience with macOS Big Sur, and
+            discuss
+            various updater problems we had to deal with. We’ll conclude with the release and an overview of various
+            other
+            improvements that are in the pipeline.</p>
+    </div>
+</section>
+
+<section id="description-top3" class="grid-one main-bg section">
+
+    <div class="main-content grid-one-content">
+
+        <h2 class="grid-main-heading">description</h2>
+
+        <p class="grid-description">breve descrição</p>
+
+        <div class="grid">
+            <article>
+                <h3>teste 1</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit laboriosam eos ipsum asperiores
+                    praesentium ducimus quas autem consequatur voluptate odit ratione, quos nemo quam possimus aliquid
+                    ex sed repellat distinctio!
+                </p>
+            </article>
+            <article>
+                <h3>teste 2</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit laboriosam eos ipsum asperiores
+                    praesentium ducimus quas autem consequatur voluptate odit ratione, quos nemo quam possimus aliquid
+                    ex sed repellat distinctio!
+                </p>
+            </article>
+            <article>
+                <h3>teste 3</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit laboriosam eos ipsum asperiores
+                    praesentium ducimus quas autem consequatur voluptate odit ratione, quos nemo quam possimus aliquid
+                    ex sed repellat distinctio!
+                </p>
+            </article>
+        </div>
+
+
+    </div>
+
+</section>
+
+<section id="gallery" class="section white-bg">
+    <div class="main-content">
+        <h1>teste</h1>
+    </div>
+</section>
+
 
 </body>
 
