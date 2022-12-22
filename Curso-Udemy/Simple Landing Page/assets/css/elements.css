@@ -60,3 +60,32 @@ a {
 p{
     margin-bottom: 2rem;
 }
+
+.responsive-table{
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+table{
+    min-width: 36rem;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table caption{
+    font-size: italic;
+    font-size: 1.6rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+table td, table th{
+    white-space: nowrap;
+    padding: 1rem;
+    text-align: center;
+    border: 0.1rem solid var(--light-gray-color);
+}
+
+table td, table th{
+    background-color: var(--primary-color);
+}
