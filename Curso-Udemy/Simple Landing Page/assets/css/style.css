@@ -1,34 +1,34 @@
-.intro-content{
+.intro-content {
     position: relative;
-    top: -7rem;
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: var(--gap);
     min-height: 100vh;
 }
 
-.intro-text-content, .intro-img{
+.intro-text-content,
+.intro-img {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
 }
 
-.intro-img img{
+.intro-img img {
     max-width: 100%;
     height: auto;
 }
 
-.top3-content{
+.top3-content {
     max-width: 95rem;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     text-align: center;
 }
 
-.grid-one-content{
+.grid-one-content {
     min-height: 100vh;
     display: flex;
     flex-flow: column wrap;
@@ -39,7 +39,7 @@
     margin-bottom: 2rem;
 }
 
-.grid-description{
+.grid-description {
     padding-bottom: 8rem;
 }
 
@@ -50,14 +50,14 @@
     counter-reset: grid-counter;
 }
 
-.grid h3{
+.grid h3 {
     font-size: 3rem;
     position: relative;
     padding-left: 5rem;
     padding-bottom: 2rem;
 }
 
-.grid h3::before{
+.grid h3::before {
     counter-increment: grid-counter;
     content: counter(grid-counter);
     position: absolute;
@@ -68,17 +68,124 @@
     transform: rotate(5deg);
 }
 
-.gallery-img{
+.gallery-img {
     width: 100%;
     max-width: 36rem;
     max-height: 36rem;
     overflow: hidden;
 }
 
-.gallery-img img{
+.gallery-img img {
     transition: all 300ms ease-in-out;
 }
 
-.gallery-img img:hover{
+.gallery-img img:hover {
     transform: translate(-3%, 3%) scale(1.2) rotate(4deg);
+}
+
+aside div {
+    height: 0rem;
+}
+
+.contact-form {
+    grid-column: span 2;
+}
+
+.contact-form .form-grid {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+.form-grid legend {
+    font-style: italic;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+.form-group {
+    flex: 1 1 32rem;
+}
+
+.form-group label {
+    text-transform: capitalize;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.form-group input,
+.form-group textarea {
+    border: none;
+    background: var(--light-gray-color);
+    padding: 1.5rem 2rem;
+    width: 100%;
+    font-size: 3rem;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    box-shadow: 0 0 1rem 0.25rem var(--primary-color);
+}
+
+
+.form-group button {
+    border: 0.5rem solid var(--primary-color);
+    background: var(--light-gray-color);
+    color: var(--primary-color);
+    padding: 1.5rem 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.form-group button:hover {
+    background: var(--primary-color);
+    color: var(--white-color);
+    ;
+}
+
+.form-group ::placeholder {
+    color: rgb(134, 134, 134);
+}
+
+.footer{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+
+.footer a{
+    color: var(--white-color);
+}
+
+.footer p{
+    margin: 0;
+    padding: 3rem;
+}
+
+
+@media (max-width: 800px) {
+    .intro-content, .grid{
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-img{
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .gallery-img img{
+        width: 100%;
+    }
+
+    .grid-one-content {
+        display: block;
+    }
 }

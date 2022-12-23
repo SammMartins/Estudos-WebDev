@@ -13,7 +13,7 @@
 .main-content {
     max-width: 120rem;
     margin: 0 auto;
-    padding: 8rem var(--gap);
+    padding: 4rem var(--gap);
 }
 
 .section {
@@ -22,4 +22,9 @@
 
 .menu-spacing{
     height: 10rem;
+}
+
+div.full-width{
+    width: 100%;
+    flex: 1 1 100%;
 }
